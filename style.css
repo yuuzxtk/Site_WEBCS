@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    padding: 5%;
+    background-image: url('https://wallpapers.com/images/hd/red-texture-background-1920-x-1080-vd2bp9mme3fcwan7.jpg');
+    align-items: center;
+}
+.content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid whitesmoke;
+    border-radius: 1.2rem;
+    background:rgba(0,0,0,0.7);
+    height: 200%;
+    width: 100%;
+    min-width: 85rem;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 14rem;
+    height: 10rem;
+    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom: 1px solid whitesmoke;
+}
+
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+header img{
+    width: 15rem;
+    height: auto;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    margin-right: 5rem;
+}
+nav :hover{
+    filter: brightness(0.5);
+    scale: 1.1;
+}
+
+.meio{
+  display: grid;
+  grid-template-areas: 
+                       "texto  imagem"
+                       "texto  imagem";
+  padding: 2rem;
+  margin-top: 5rem;
+    border-radius: 1.2rem;
+    color: whitesmoke;
+}
+
+.welcome{
+    grid-area: texto;
+    margin: 1.2rem;
+    max-width: 55rem;
+}
+
+.welcome h1{
+    text-align: center;
+    margin-top: 0rem;
+    font-size: 5rem;
+}
+
+.welcome p{
+    text-align: justify;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+.welcome a{
+    text-decoration: none;
+}
+.welcome button{
+    display: flex;
+    align-self: center;
+    border: none;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botao:hover{
+    scale: 1.1;
+}
+.welcome__final{
+    display: flex;
+    align-items: self-start;
+    margin-top: 12rem;
+}
+
+.imagens{
+    display: flex;
+    grid-area: imagem;
+}
+
+.imagens img{
+    width: 50rem;
+}
+
+.membros{
+    color: whitesmoke;
+    margin: 4rem;
+    text-align: center;
+    position: relative;
+}
+.titulomem{
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+}
+.membros__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.membro{
+    padding: 1rem;
+}
+.membro :hover{
+    scale: 0.8;
+    filter: brightness(0.3);
+}
+.Kami, .Tetsu, .Gaz, .Klaha, .Gackt, .yuki, .Mana, .Kozi{
+    height: 210px;
+    width: 210px;
+}
+.membro a{
+    font-size: 2rem;
+    border: 1px solid whitesmoke;
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    background-color: brown;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.membro h2{
+    font-size: 2.1rem;
+}
+.membro p{
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+.sobre{
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 2.1rem;
+    padding: 4rem;
+}
+.sobre h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+@media (min-width: 1600px){
+    .content{
+        max-width: 1450px;
+    }
+    body{
+        align-items: center;
+    }
+    .Mana, .Klaha, .yuki, .Kozi, .Gackt, .Kami, .Tetsu, .Gaz{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1599px){
+    .content{
+        max-width: 1450px;
+    }
+    body{
+        align-items: center;
+    }
+    .Mana, .Klaha, .yuki, .Kozi, .Gackt, .Kami, .Tetsu, .Gaz{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media (max-width: 1120px) {
+    .imagens img{
+        width: 40rem;
+    }
+    .welcome{
+        font-size: 4.4rem;
+    }
+    .welcome__final{
+        margin-top: 3rem;
+    }
+    .Mana, .Klaha, .yuki, .Kozi, .Gackt, .Kami, .Tetsu, .Gaz{
+        height: 150px;
+        width: 150px;
+    }
+}
+@media (max-width: 927px) {
+    body{
+        padding: 0; 
+    }
+    .meio{
+        grid-template-areas: 
+                       "imagem"
+                       "texto";
+    }
+    .imagens{
+        justify-content: center;
+    }
+}
+@media (max-width: 867px) {
+    .content{
+        height: 100%;
+    }
+    header img{
+        margin-left: 2rem;
+        width: 25rem;
+    }
+    nav{
+        display: none;
+    }
+    .Mana, .Klaha, .yuki, .Kozi, .Gackt, .Kami, .Tetsu, .Gaz{
+        height: 300px;
+        width: 300px;
+    }
+    .welcome{
+        scale: 1.2;
+        margin-top: 2.5rem;
+    }
+}
